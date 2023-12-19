@@ -1,5 +1,5 @@
 {
-	"name": "sql",
+	"name": "sveltekit-drizzle",
 	"version": "0.0.1",
 	"private": true,
 	"type": "module",
@@ -8,7 +8,9 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"db:generate": "pnpm drizzle-kit generate:sqlite",
+		"db:migrate": "pnpm dlx tsx src/lib/server/db/migrate.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",

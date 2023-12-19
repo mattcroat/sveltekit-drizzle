@@ -1,5 +1,5 @@
-// See https://kit.svelte.dev/docs/types#app
-// for information about these interfaces
+import type { KyselyDatabase } from '$lib/server/db'
+
 declare global {
 	namespace App {
 		// interface Error {}

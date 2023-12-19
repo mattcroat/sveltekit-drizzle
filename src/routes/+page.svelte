@@ -4,6 +4,10 @@
 	export let data
 </script>
 
+<pre>
+ {JSON.stringify(data, null, 2)}
+</pre>
+
 <form use:enhance method="POST" action="?/addTodo">
 	<input type="text" name="todo" />
 </form>
